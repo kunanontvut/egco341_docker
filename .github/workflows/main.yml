@@ -15,5 +15,5 @@ jobs:
     - name: Build & Push Image
       run: |
         echo "${{ secrets.DOCKERPW }}" | docker login -u "kunanont" --password-stdin
-        docker image build -t kunanont/testdocker2:latest .
-        docker push kunanont/testdocker2:latest
+        docker image build -t kunanont/testdocker:latest .
+        docker push kunanont/testdocker:latest
